@@ -7,5 +7,8 @@ handlers:
   script: main.app
 
 libraries:
-- name: flask
-  version: 0.12
+- name: ssl
+  version: latest
+
+builtins:
+- remote_api: on

@@ -5,5 +5,5 @@ views package
 2019/2/6 y.ikeda
 """
 
-from toppage import main as v_toppage
+from entry import main as v_entry
 

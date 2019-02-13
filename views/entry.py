@@ -6,10 +6,8 @@ entry page
 """
 
 from flask import Flask, render_template, request
-from common import PAGE_TITLE
 
 def main():
     return render_template(
-        'entry.html',
-        page_title=u'xxaaあxx'
+        'entry.html'
     )

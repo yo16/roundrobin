@@ -1,7 +1,25 @@
 /*
  Round Robin style sheet
+
+ 2019/2/6 y.ikeda
 */
 
 body {
     background-color: #003f8e;
+    font-family:"メイリオ","Hiragino Kaku Gothic Pro",Meiryo,"ヒラギノ角ゴ Pro W3","MS PGothic","MS UI Gothic",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+input, textarea{
+    font-size: 16px;
+}
+input[type="text"], textarea{
+    padding: 5px;
+}
+:placeholder-shown, ::-webkit-input-placeholder{
+    color: #ccc;
+}
+
+.under_line{
+    text-decoration: underline;
 }

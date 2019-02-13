@@ -3,12 +3,104 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>日本語{{ page_title }}</title>
+        <title>タイセンジャー</title>
         <link rel="shortcut icon" href="/static/img/favicon.png" />
         <link rel="stylesheet" href="/static/css/roundrobin.css">
+        <link rel="stylesheet" href="/static/css/entry.css">
         <script src="/static/js/jquery-3.3.1.min.js"></script>
+        <script src="/static/js/entry.js"></script>
     </head>
     <body>
-        entry-page
+        <table id="tbl_header">
+            <tr>
+                <td id="td_title">タイセンジャー（仮）</td>
+                <td id="td_subtitle">カンタン&nbsp;リーグ戦作成ツール。<br />色々なタイセンで利用しよう。</td>
+            </tr>
+        </table>
+
+        <table id="tbl_stepframe">
+            <tr><td class="td_stepframe">
+                <span class="under_line">step1.</span><br />
+                リーグ戦の大会名を入力しよう！<br />
+                詳細は書かなくても大丈夫。
+                <table id="tbl_entry">
+                    <tr>
+                        <th>大会名</th>
+                        <td>
+                            <input
+                                type="text" name="txt_tournament_name" id="txt_tournament_name"
+                                placeholder="第３回 我が家杯 オセロ大会"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>詳細</th>
+                        <td>
+                            <textarea
+                                name="area_detail" id="area_detail"
+                                placeholder="今夜の優勝賞品、高級アイスクリームは誰の手に！？(省略可)"
+                            ></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </td></tr>
+            <tr><td class="td_stepframe">
+                <span class="under_line">step2.</span><br />
+                同時に行う試合の数を入力しよう！<br />
+                試合会場の数のことだよ。
+                <table id="tbl_ground">
+                    <tr>
+                        <th>
+                            会場数
+                        </th>
+                        <td>
+                            <select id="sel_num_of_ground">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </td></tr>
+            <tr><td class="td_stepframe">
+                <span class="under_line">step3.</span><br />
+                参加者の情報を登録しよう！<br />
+                アイコンをクリックすると簡単に入るよ。
+                <table id="tbl_players">
+                    <tr>
+                        <th rowspan="3">参加者<br /><span id="num_of_palyers">(6人)</span></th>
+                        <td>参加者リスト</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea
+                                name="area_players" id="area_players"
+                                placeholder="お父さん
+お母さん
+リキ
+テツ
+シロ
+タロ"
+                            ></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </td></tr>
+            <tr><td class="td_stepframe">
+                <span class="under_line">step4.</span><br />
+                リーグ戦を開始しよう！<br />
+                実行する前に参加者の順番をシャッフルするかそのままにするか選べるよ。
+                <table id="tbl_regist">
+                    <tr>
+                        <td>
+                            <button type="button" class="btn_regist">そのままの順番で作成</button>
+                            <button type="button" class="btn_regist">シャッフルして作成</button>
+                        </td>
+                    </tr>
+                </table>
+            </td></tr>
+        </table>
     </body>
 </html>

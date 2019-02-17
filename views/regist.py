@@ -17,8 +17,8 @@ def main():
 
     return render_template(
         'roundrobin.html',
-        name = p_name,
-        detail = p_detail,
-        ground_num = p_ground_num,
-        players = p_players
+        name=p_name,
+        detail=p_detail,
+        ground_num=p_ground_num,
+        players=p_players
     )

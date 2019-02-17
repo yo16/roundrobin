@@ -5,15 +5,46 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>タイセンジャー</title>
         <link rel="shortcut icon" href="/static/img/favicon.png" />
+        <link rel="stylesheet" href="/static/css/main.css">
         <link rel="stylesheet" href="/static/css/roundrobin.css">
         <script src="/static/js/jquery-3.3.1.min.js"></script>
     </head>
     <body>
-        大会名：{{ name }}<br />
-        詳細：{{ detail }}<br />
-        会場数：{{ ground_num }}<br />
-        プレイヤー：{% for p in players %}
-            {{ p }}<br />
-        {% endfor %}
+        <table>
+            <tr>
+                <th>
+                    大会名
+                </th>
+                <td>
+                    {{ name }}
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    詳細
+                </th>
+                <td>
+                    {{ detail }}
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    会場数
+                </th>
+                <td>
+                    {{ ground_num }}
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    プレイヤー
+                </th>
+                <td>
+                    {% for p in players %}
+                        {{ p }}<br />
+                    {% endfor %}
+                </td>
+            </tr>
+        </table>
     </body>
 </html>

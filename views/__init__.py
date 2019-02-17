@@ -6,4 +6,5 @@ views package
 """
 
 from entry import main as v_entry
+from regist import main as v_regist
 

@@ -27,4 +27,6 @@ $(document).ready(function(){
 function regist(){
     var cur_members = $("#area_players").val().split(/[\r\n]+/);
     
+    // post
+    $("#frmRegist").submit();
 }

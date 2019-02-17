@@ -61,12 +61,10 @@ entry.css
 }
 
 
-
-
 #tbl_regist td{
     padding: 10px;
 }
-/* 参考 https://yusukegoto.com/734/ */
+/* ボタン参考 https://yusukegoto.com/734/ */
 .button1{
     width: 120px;
     height: 40px;

@@ -4,40 +4,6 @@ entry.css
 2019/2/7 y.ikeda
 */
 
-#tbl_header{
-    margin-bottom: 10px;
-}
-#td_title {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-#td_subtitle {
-    color: #cce;
-    font-size: 0.8rem;
-}
-
-
-#tbl_stepframe {
-    border-spacing: 10px;
-}
-.td_stepframe {
-    background-color: #fff;
-    border-radius: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-
-.td_stepframe > table {
-    background-color: #fff;
-    border: 3px solid rgb(238, 225, 218);
-    margin: 20px;
-}
-.td_stepframe th {
-    background-color: #FFD464;
-    padding: 5px 10px;
-}
 #area_detail {
     height: 60px;
 }

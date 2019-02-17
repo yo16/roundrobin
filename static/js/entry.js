@@ -5,6 +5,8 @@ entry.js
 */
 
 $(document).ready(function(){
+    test1();
+    
     $("#btn_regist_stayorder").click(function(){
         regist();
     });
@@ -35,4 +37,15 @@ function regist(){
     
     // post
     $("#frmRegist").submit();
+}
+
+function test1(){
+    function set_placeholder_val(id){
+        var v = $(id).attr("placeholder");
+        $(id).val(v);
+    }
+    set_placeholder_val("#txt_tournament_name");
+    set_placeholder_val("#area_detail");
+    set_placeholder_val("#area_players");
+    
 }

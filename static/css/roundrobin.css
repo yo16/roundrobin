@@ -1,5 +1,24 @@
 /*
  roundrobin.css
- 
+
  2019/2/17 y.ikeda
  */
+
+ /* 縦書きの枠 */
+ .tate span, .tate {
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+}
+.tate {
+    height: 180px;
+    width:40px;
+}
+.yoko {
+    white-space: nowrap;
+}
+#tbl_rr td{
+    background-color: #fff;
+    text-align: center;
+    white-space: nowrap;
+}

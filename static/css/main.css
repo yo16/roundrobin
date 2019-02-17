@@ -5,7 +5,8 @@
 */
 
 body {
-    background-color: #003f8e;
+    /*background-color: #003f8e;*/
+    background-color: #fff;
     font-family:"メイリオ","Hiragino Kaku Gothic Pro",Meiryo,"ヒラギノ角ゴ Pro W3","MS PGothic","MS UI Gothic",Helvetica,Arial,sans-serif;
     font-size: 16px;
 }
@@ -22,4 +23,41 @@ input[type="text"], textarea{
 
 .under_line{
     text-decoration: underline;
+}
+
+
+
+#tbl_header{
+    margin-bottom: 10px;
+}
+#td_title {
+    color: #99c;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#td_subtitle {
+    color: #9cc;
+    font-size: 0.8rem;
+}
+
+
+#tbl_mainframe {
+    border-spacing: 10px;
+}
+.td_mainframe {
+    background-color: #eee;
+    border: 3px solid #6cc;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.td_mainframe > table {
+    background-color: rgb(255, 234, 181);
+    margin: 20px;
+}
+.td_mainframe th {
+    background-color: #FFD464;
+    padding: 5px 10px;
 }

@@ -17,6 +17,12 @@ $(document).ready(function(){
             cur_members[i] = cur_members[r];
             cur_members[r] = tmp;
         }
+        // 空白があったら削除
+        for(var i=cur_members.length-1; i>0; i--){
+            if( cur_members[i] == "" ){
+                cur_members.splice(i, 1);
+            }
+        }
         $("#area_players").val(cur_members.join("\n"));
 
         regist();
@@ -25,7 +31,7 @@ $(document).ready(function(){
 
 
 function regist(){
-    var cur_members = $("#area_players").val().split(/[\r\n]+/);
+    //var cur_members = $("#area_players").val().split(/[\r\n]+/);
     
     // post
     $("#frmRegist").submit();

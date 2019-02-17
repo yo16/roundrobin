@@ -9,6 +9,11 @@
         <script src="/static/js/jquery-3.3.1.min.js"></script>
     </head>
     <body>
-        registed!
+        大会名：{{ name }}<br />
+        詳細：{{ detail }}<br />
+        会場数：{{ ground_num }}<br />
+        プレイヤー：{% for p in players %}
+            {{ p }}<br />
+        {% endfor %}
     </body>
 </html>

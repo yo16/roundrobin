@@ -24,6 +24,9 @@ input[type="text"], textarea{
 .under_line{
     text-decoration: underline;
 }
+.center{
+    text-align: center;
+}
 
 
 

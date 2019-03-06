@@ -4,7 +4,7 @@ RoundRobin
 """
 from google.appengine.ext import ndb
 
-from .ShortUri import create_new_uri
+from .ShortUri import create_new_uri, regist_uri
 
 class RoundRobin(ndb.Model):
     """ RoundRobin class
@@ -36,7 +36,10 @@ def regist_roundrobin(name, detail, num_of_ground, players):
     rrinfo['uri'] = uri
 
     # 登録
-    key = RoundRobin(**rrinfo).put()
+    rrkey = RoundRobin(**rrinfo).put()
 
-    return key.integer_id(), uri
+    # URIも登録
+    _ =regist_uri(uri)
+
+    return rrkey.integer_id(), uri
 

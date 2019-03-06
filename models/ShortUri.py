@@ -34,3 +34,16 @@ def create_new_uri(uri_len=20):
     
     return uri
 
+
+def regist_uri(uri_str):
+    """ 登録
+    """
+    uinfo = {}
+    uinfo['uri'] = uri_str
+    uinfo['create_date'] = datetime.today()
+    uinfo['last_use_datetime'] = datetime.now()
+
+    # 登録
+    key = ShortURI(**uinfo).put()
+
+    return key.integer_id()

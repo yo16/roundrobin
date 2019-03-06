@@ -4,7 +4,7 @@
 import logging
 
 from flask import Flask
-from views import v_entry, v_regist
+from views import v_entry, v_regist, v_result
 
 app = Flask(__name__)
 
@@ -16,6 +16,10 @@ def top():
 @app.route('/regist', methods=['POST'])
 def posted():
     return v_regist()
+
+@app.route('/r')
+def view_result():
+    return v_result()
 
 
 @app.errorhandler(500)

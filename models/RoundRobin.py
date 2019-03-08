@@ -43,3 +43,19 @@ def regist_roundrobin(name, detail, num_of_ground, players):
 
     return rrkey.integer_id(), uri
 
+
+def get_roundrobin(uri_str):
+    """ URIをキーにRoundRobin情報を得る
+    """
+    r = RoundRobin.query(RoundRobin.uri==uri_str).get()
+    r_info = {
+        'name': r.name,
+        'detail': r.detail,
+        'num_of_ground': r.num_of_ground,
+        'players': [],
+        'uri': uri_str
+    }
+    for p in r.players:
+        r_info['players'].append(p)
+    
+    return r_info

@@ -2,9 +2,9 @@
 
 # [START app]
 import logging
-
 from flask import Flask
-from views import v_entry, v_regist, v_result
+
+from views import v_entry, v_regist, v_result_table
 
 app = Flask(__name__)
 
@@ -18,8 +18,8 @@ def posted():
     return v_regist()
 
 @app.route('/r')
-def view_result():
-    return v_result()
+def view_result_table():
+    return v_result_table()
 
 
 @app.errorhandler(500)
